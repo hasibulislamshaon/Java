@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class binary_decimal {
+public class decimal_binary {
 
 	public static void main(String[] args) {
 		int decimal;
