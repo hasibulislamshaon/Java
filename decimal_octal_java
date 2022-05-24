@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class decimal_octal {
+
+	public static void main(String[] args) {
+		int decimal;
+		int x = 0;
+		int octal_1[]= new int[1000];
+		Scanner binary= new Scanner(System.in);
+		System.out.println("Enter a decimal number:");
+		decimal= binary.nextInt();
+		
+		while(decimal!=0) {
+			octal_1[x]=decimal%8;
+			decimal=decimal/8;
+			x++;
+			
+		}
+		System.out.println("Decimal to Octal: ");
+		
+		for(int j=x-1;j>=0;j--) {
+			System.out.println(""+octal_1[j]);
+			
+		}
+
+	}
