@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class binary_decimal {
+
+	public static void main(String[] args) {
+		int decimal;
+		int x = 0;
+		int binary_1[]= new int[1000];
+		Scanner binary= new Scanner(System.in);
+		System.out.println("Enter a decimal number:");
+		decimal= binary.nextInt();
+		
+		while(decimal!=0) {
+			binary_1[x]=decimal%2;
+			decimal=decimal/2;
+			x++;
+			
+		}
+		System.out.println("Decimal to binary: ");
+		
+		for(int j=x-1;j>=0;j--) {
+			System.out.println(""+binary_1[j]);
+			
+		}
+
+	}
+
+}
