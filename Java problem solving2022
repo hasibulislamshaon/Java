@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class calculator {
+	public static void main(String[] args) {
+		System.out.println("   J    a   v     v  a ");
+		System.out.println("   J   a a   v   v  a a ");
+		System.out.println("J  J  aaaaa   V V  aaaaa ");
+		System.out.println(" JJ  a     a   V  a     a");
+		
+		
+	double number_two;
+	double number_one;
+	Scanner cal= new Scanner(System.in);
+	System.out.println("2 Numbers: ");
+	
+	number_one = cal.nextDouble();
+	number_two= cal.nextDouble();
+	
+	System.out.println("Sum of the two number:"+ (number_one + number_two));
+	
+	System.out.println("Multliply of the two number:"+ (number_one * number_two));
+	
+	if(number_one>number_two) {
+	System.out.println("Substruction of the two number:"+ (number_one - number_two));}
+	else {
+		System.out.println("Negative value: "+(number_one-number_two));
+	}
+	double reminder= (number_one % number_two);
+	
+	if(reminder==0) {
+	System.out.println("No reminder" );}
+	else {
+		System.out.println("Reminder of the two number:"+reminder );
+	}
+	
+	if(number_two==0) {
+	System.out.println("Devide not possible");	
+	}
+	else {
+		System.out.println("Devide of the two number:"+ (number_one /number_two));
+	}
