@@ -1,0 +1,52 @@
+public class test {
+
+	public static void main(String[] args) {
+		
+		
+		number_compare number= new number_compare();
+		number.number();
+		
+		
+	}
+
+
+}
+
+import java.util.Scanner;
+public class number_compare {
+	void number() {
+		
+		System.out.println("----------------------------------------------");
+		Scanner compute= new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int number_1= compute.nextInt();
+        System.out.println("Enter the second number: ");
+        int number_2= compute.nextInt();
+        if(number_1!=number_2) {
+        	System.out.println(number_1+"!="+number_2);
+        	
+        }
+        else {
+    		System.out.println(number_1+"="+number_2);
+    	}
+        if(number_1>number_2) {
+        	System.out.println(number_1+">"+number_2);
+        }
+        else if(number_1<number_2) {
+        	System.out.println(number_1+"<"+number_2);
+        }
+        else {
+        	System.out.println("\n");
+        }
+        if(number_1<=number_2) {
+        	System.out.println(number_1+"<="+number_2);
+        }
+        else if (number_1>=number_2){
+        	System.out.println(number_1+"=>"+number_2);
+        }
+        else {
+        	System.out.println("\n");
+        }
+        
+	}
+}
